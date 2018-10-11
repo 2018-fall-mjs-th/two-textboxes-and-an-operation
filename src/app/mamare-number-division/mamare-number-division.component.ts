@@ -14,7 +14,7 @@ export class MamareNumberDivisionComponent implements OnInit {
 
   answer = 0;
 
-  divideNumber() {
+  divideNumbers() {
     this.answer = this.n1 / this.n2; 
   }
 
