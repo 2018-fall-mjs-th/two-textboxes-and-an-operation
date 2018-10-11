@@ -1,3 +1,6 @@
-<p>
-  rd-search-string works!
-</p>
+<h3>Ross' String Search</h3>
+<input type="text" [(ngModel)]="stringToSearch">
+&nbsp; + &nbsp;
+<input type="text" [(ngModel)]="searchString">
+&nbsp; <button (click)="checkString()">Find</button> &nbsp;
+{{ isMatch }}

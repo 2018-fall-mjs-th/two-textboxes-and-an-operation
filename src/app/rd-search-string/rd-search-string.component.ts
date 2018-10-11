@@ -12,4 +12,12 @@ export class RdSearchStringComponent implements OnInit {
   ngOnInit() {
   }
 
+  isMatch = false;
+
+  checkString() {
+    this.isMatch = this.stringToSearch.includes(this.searchString);
+  }
+
+  stringToSearch: string = "String To Search";
+  searchString: string = "Search Value";
 }
