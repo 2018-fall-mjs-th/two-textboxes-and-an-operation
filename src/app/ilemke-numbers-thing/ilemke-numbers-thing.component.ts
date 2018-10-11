@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatrixService, MatrixService } from './mtrx.service';
+import { MatrixService } from './mtrx.service';
 
 @Component({
   selector: 'app-ilemke-numbers-thing',
