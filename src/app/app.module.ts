@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { TjsNumberSubtractComponent } from './tjs-number-subtract/tjs-number-subtract.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TjsAddNumbersComponent
+    TjsAddNumbersComponent,
+    TjsNumberSubtractComponent
   ],
   imports: [
     BrowserModule,
