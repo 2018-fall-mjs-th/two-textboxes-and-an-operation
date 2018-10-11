@@ -14,19 +14,17 @@ export class IlemkeNumbersThingComponent implements OnInit {
 
   constructor(private mtrx: MatrixService) { }
 
-
   ngOnInit() {}
-  
 
   /**
    * Initiate the Matrix!
-   * Passes the given input into the matrix ... for 5 seconds
+   * Passes the given input into the matrix ... 
    */
   public initiateTheMatrix() {
     clearInterval(this.interval);
     let concatString = this.myMatrixString1 + this.myMatrixString2;
-    let remainingDuration = 4; // 4 seconds, then screen will clear
-    this.mtrx.callNeo(concatString); // Call the Matrix
+    let remainingDuration = 4;          // 4 seconds, then screen will clear
+    this.mtrx.callNeo(concatString);    // Call the Matrix
 
     this.interval = setInterval(() => { 
       if (remainingDuration > 1) {
@@ -38,7 +36,7 @@ export class IlemkeNumbersThingComponent implements OnInit {
     }, 1000);
 
   }
-
+ 
 
   public breakOutOfTheMatrix() {
     console.log('Breaking out of the Matrix!');
