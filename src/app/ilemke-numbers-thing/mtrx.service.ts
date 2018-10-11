@@ -23,70 +23,51 @@ export class MatrixService {
         let font_size = 12; 
         let columns = c.width/font_size; //number of columns for the rain
         
-        //an array of drops - one per column
+        // Stores an array of drops - one per column
         var drops = [];
 
-        //x below is the x coordinate
-        //1 = y co-ordinate of the drop(same for every drop initially)
-
-        // For each column, initiate a new array of 1s 
+        // For each column, initiate a new array of drop positions (initialized at the top of the screen)
         for (let i = 0; i < columns; i++) {
             drops[i] = 1;
         }
         
-        //drawing the characters
+        // Draw the characters onto the canvas
         function draw() {
 
-        //Black BG for the canvas
-        //translucent BG to show trail
-        ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-        ctx.fillRect(0, 0, c.width, c.height);
-        
-        ctx.fillStyle = "#0F0"; //green text
-        ctx.font = font_size + "px arial";
-
-        
-        drops.map((aDrop, i) => {
- 
-            let text = numbersArray[Math.floor(Math.random()*numbersArray.length)];
-            ctx.fillText(text, i*font_size, drops[i]*font_size);
-
-            if (aDrop*font_size > c.height && Math.random() > 0.975) {
-                drops[i] = 0;
-            }
-
-            // Increment Y Coordinate
-            drops[i]++;
-
-        });
-
-    }
-
-
-    setInterval(draw, 30);
-    parentNode.appendChild(c);
-        
-        /*
-        
-        //looping over drops
-        for(var i = 0; i < drops.length; i++)
-        {
-            //a random chinese character to print
-            var text = numbersArray[Math.floor(Math.random()*numbersArray.length)];
-            //x = i*font_size, y = value of drops[i]*font_size
-            ctx.fillText(text, i*font_size, drops[i]*font_size);
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; // Translucancy property set here
+            ctx.fillRect(0, 0, c.width, c.height);
             
-            //sending the drop back to the top randomly after it has crossed the screen
-            //adding a randomness to the reset to make the drops scattered on the Y axis
-            if(drops[i]*font_size > c.height && Math.random() > 0.975)
-                drops[i] = 0;
+            ctx.fillStyle = "#0F0"; //green text
+            ctx.font = font_size + "px arial";
+
             
-            //incrementing Y coordinate
-            drops[i]++;
+            // Loop over drops
+            drops.map((aDrop, i) => {
+    
+                // Pick a random character from the array 
+                let text = numbersArray[Math.floor(Math.random()*numbersArray.length)];
+
+                // x = i * font_size, y = value of aDrop * font_size
+                ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+                // Send the drop back to the top of the screen randomly after exceeding the max height
+                if (aDrop*font_size > c.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+
+                // Increment Y Coordinate
+                drops[i]++;
+
+            });
+
         }
-        */
-        
-        
+
+    // Set periodic redraw 
+    setInterval(draw, 30);
+
+    // Append to placeholder div
+    parentNode.appendChild(c);
+          
     }
     
 }

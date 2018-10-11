@@ -8,57 +8,61 @@ import { MatrixService } from './mtrx.service';
 })
 export class IlemkeNumbersThingComponent implements OnInit {
   
-  public countDown: number;
-  public stringToReverse1: string;
-  public stringToReverse2: string;
-  public concatString: string;
-  public showCountDown: boolean;
+  public myMatrixString1: string;
+  public myMatrixString2: string;
   public interval: any;
 
   constructor(private mtrx: MatrixService) { }
 
 
-  ngOnInit() {
-    this.showCountDown = false;
-  }
+  ngOnInit() {}
   
 
-  public reverseString() {
+  /**
+   * Initiate the Matrix!
+   * Passes the given input into the matrix ... for 5 seconds
+   */
+  public initiateTheMatrix() {
     clearInterval(this.interval);
-    this.concatString = this.stringToReverse1 + this.stringToReverse2;
-    this.countDown = 5;
-    this.showCountDown = true;
+    let concatString = this.myMatrixString1 + this.myMatrixString2;
+    let remainingDuration = 4; // 4 seconds, then screen will clear
+    this.mtrx.callNeo(concatString); // Call the Matrix
+
     this.interval = setInterval(() => { 
-      if (this.countDown >= 1) {
-        this.myTimerFunction();
-        this.showCountDown = true; 
+      if (remainingDuration > 1) {
+        remainingDuration--;
       } else {
-        this.showCountDown = false;
+        this.breakOutOfTheMatrix();
         clearInterval(this.interval);
       }
     }, 1000);
-  }
 
-  public myTimerFunction() {
-    this.countDown--;
-    if (this.countDown <= 0) {
-      this.concatString = this.getReversedString(this.concatString);
-    }
-  }
-
-  public getReversedString(stringToReverse: string) {
-    return stringToReverse.split('').reverse().join('');
-  }
-
-  public initiateTheMatrix() {
-    this.concatString = this.stringToReverse1 + this.stringToReverse2;
-    this.mtrx.callNeo(this.concatString);
   }
 
 
-  
+  public breakOutOfTheMatrix() {
+    console.log('Breaking out of the Matrix!');
+    let elem = document.getElementById('matrixNode');
+    let childNodes = [ elem.childNodes ];
+    elem.childNodes.forEach(aChildNode => {
+      this.fadeElement(aChildNode);
+    });
+  }
 
-
-
+  /**
+   * Lower the given element's opacity until zero, then remove it. 
+   */
+  public fadeElement(elem) {
+    let opacity = 1;
+    let interval = setInterval(function () {
+      if (opacity <= 0.1) {
+        clearInterval(interval);
+        elem.style.display = "none";
+      }
+      elem.style.opacity = opacity;
+      elem.style.filter = `alpha(opacity= + ${ opacity } * 100 + )`;
+      opacity -= opacity * 0.1;
+    }, 50);
+  }
 
 }

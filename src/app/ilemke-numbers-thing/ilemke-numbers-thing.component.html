@@ -1,12 +1,7 @@
 <h3>Isaac's ... Numbers Thing</h3>
-<input type="text" [(ngModel)]="stringToReverse1">
-<input type="text" [(ngModel)]="stringToReverse2">
+<input type="text" [(ngModel)]="myMatrixString1">
+<input type="text" [(ngModel)]="myMatrixString2">
 
-&nbsp; <button (click)="reverseString()">Do Something Cool!</button> &nbsp;
-<div *ngIf="countDown > 0">{{ countDown }}</div>
+<button (click)="initiateTheMatrix()">Do Something Cool!</button>
 
-<button (click)="initiateTheMatrix()">Initiate The Matrix</button>
-
-<div id="matrixNode" style="position:absolute;right:0;top:0">
-    test
-</div>
+<div id="matrixNode" style="position:absolute;right:0;top:0"></div>
