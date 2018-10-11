@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
 import { IlemkeNumbersThingComponent } from './ilemke-numbers-thing/ilemke-numbers-thing.component';
+import { MatrixService } from './ilemke-numbers-thing/mtrx.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { IlemkeNumbersThingComponent } from './ilemke-numbers-thing/ilemke-numbe
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MatrixService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

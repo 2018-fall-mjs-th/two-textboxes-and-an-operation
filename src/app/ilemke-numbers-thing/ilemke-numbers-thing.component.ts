@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatrixService } from './mtrx.service';
+import { MatrixService, MatrixService } from './mtrx.service';
 
 @Component({
   selector: 'app-ilemke-numbers-thing',
@@ -15,25 +15,12 @@ export class IlemkeNumbersThingComponent implements OnInit {
   public showCountDown: boolean;
   public interval: any;
 
-  constructor() { }
+  constructor(private mtrx: MatrixService) { }
 
 
   ngOnInit() {
     this.showCountDown = false;
-    //this.setPopup();
   }
-
-
-  /*
-  public setPopup() {
-    let refElement = document.getElementById("referenceElement");
-    let popElement = document.getElementById("popperElement");
-
-    let popup = new Popper(refElement, popElement, {
-      placement: 'bottom'
-    });
-  }
-  */
   
 
   public reverseString() {
@@ -64,7 +51,8 @@ export class IlemkeNumbersThingComponent implements OnInit {
   }
 
   public initiateTheMatrix() {
-
+    this.concatString = this.stringToReverse1 + this.stringToReverse2;
+    this.mtrx.callNeo(this.concatString);
   }
 
 
