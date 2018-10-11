@@ -36,17 +36,16 @@ export class IlemkeNumbersThingComponent implements OnInit {
     }, 1000);
 
   }
- 
 
   public breakOutOfTheMatrix() {
     console.log('Breaking out of the Matrix!');
     let elem = document.getElementById('matrixNode');
-    let childNodes = [ elem.childNodes ];
-    elem.childNodes.forEach(aChildNode => {
+    let childElemArray = Array.prototype.slice.call(elem.childNodes);
+    childElemArray.forEach(aChildNode => {
       this.fadeElement(aChildNode);
     });
   }
-
+ 
   /**
    * Lower the given element's opacity until zero, then remove it. 
    */
