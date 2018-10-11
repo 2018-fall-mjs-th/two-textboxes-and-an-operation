@@ -14,7 +14,7 @@ export class EaMultTwoNumbersComponent implements OnInit {
 
   answer = '?';
 
-  addNumbers() {
+  multNumbers() {
     this.answer = this.n1 * this.n2;
   }
 
