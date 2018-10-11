@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { IlemkeNumbersThingComponent } from './ilemke-numbers-thing/ilemke-numbers-thing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TjsAddNumbersComponent
+    TjsAddNumbersComponent,
+    IlemkeNumbersThingComponent
   ],
   imports: [
     BrowserModule,

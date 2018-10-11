@@ -1,0 +1,12 @@
+<h3>Isaac's ... Numbers Thing</h3>
+<input type="text" [(ngModel)]="stringToReverse1">
+<input type="text" [(ngModel)]="stringToReverse2">
+
+&nbsp; <button (click)="reverseString()">Do Something Cool!</button> &nbsp;
+<div *ngIf="countDown > 0">{{ countDown }}</div>
+
+<div class="display-region">
+    {{ concatString }}
+</div>
+
+<canvas id="c"></canvas>
