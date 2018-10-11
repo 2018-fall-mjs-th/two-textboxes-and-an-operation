@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TjsNumberAdditionComponent } from './tjs-number-addition.component';
+import { RdSearchStringComponent } from './rd-search-string.component';
 
-describe('TjsNumberAdditionComponent', () => {
-  let component: TjsNumberAdditionComponent;
-  let fixture: ComponentFixture<TjsNumberAdditionComponent>;
+describe('RdSearchStringComponent', () => {
+  let component: RdSearchStringComponent;
+  let fixture: ComponentFixture<RdSearchStringComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TjsNumberAdditionComponent ]
+      declarations: [ RdSearchStringComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TjsNumberAdditionComponent);
+    fixture = TestBed.createComponent(RdSearchStringComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
-import { TjsNumberAdditionComponent } from './tjs-number-addition/tjs-number-addition.component';
+import { RdSearchStringComponent } from './rd-search-string/rd-search-string.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TjsAddNumbersComponent,
-    TjsNumberAdditionComponent
+    RdSearchStringComponent
   ],
   imports: [
     BrowserModule,
