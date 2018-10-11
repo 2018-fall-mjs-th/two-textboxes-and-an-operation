@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-string-concatenation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TjsAddNumbersComponent
+    TjsAddNumbersComponent,
+    TjsStringConcatenationComponent
   ],
   imports: [
     BrowserModule,
