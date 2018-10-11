@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { MsaAddNumbersComponent } from './msa-add-numbers/msa-add-numbers.component';
 import { TjsNumberAddition2Component } from './tjs-number-addition2/tjs-number-addition2.component';
 import { BenOperationComponent } from './ben-operation/ben-operation.component';
 import { TwoTextBoxesAndADropDownComponent } from './two-text-boxes-and-adrop-down/two-text-boxes-and-adrop-down.component';
@@ -16,6 +17,7 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
   declarations: [
     AppComponent,
     TjsAddNumbersComponent,
+    MsaAddNumbersComponent,
     TjsNumberAddition2Component,
     BenOperationComponent,
     TwoTextBoxesAndADropDownComponent,
