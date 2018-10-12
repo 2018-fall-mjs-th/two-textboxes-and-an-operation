@@ -1,7 +1,16 @@
+<div class="card">
+  <div class="card-header">
+    <h4 style="color:red">Drew's String Concatenation</h4>
+  </div>
+  <div class="card-body">
+      <h5 class="card-subtitle text-muted">Continually adds a new string 
+          to the end of the previous string</h5><br>
+      <input type="text" [(ngModel)]="firstString">
+      &nbsp; + &nbsp;
+      <input type="text" [(ngModel)]="secondString" id="secondBox">
+      &nbsp; <button (click)="spliceStrings()">=</button> &nbsp;
+      {{ finalString }}
+  </div>
+</div>
+  
 
-  <h3 style="color: red">Drew's String Concatenation</h3>
-  <input type="text" [(ngModel)]="firstString">
-  &nbsp; + &nbsp;
-  <input type="text" [(ngModel)]="secondString" id="secondBox">
-  &nbsp; <button (click)="spliceStrings()">=</button> &nbsp;
-  {{ finalString }}
