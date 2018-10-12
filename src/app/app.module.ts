@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { MkcPowerComponent } from './mkc-power/mkc-power.component';
 import { EaMultTwoNumbersComponent } from './ea-mult-two-numbers/ea-mult-two-numbers.component';
 import { PskNumberSubtractionComponent } from './psk-number-subtraction/psk-number-subtraction.component';
 import { IlemkeNumbersThingComponent } from './ilemke-numbers-thing/ilemke-numbers-thing.component';
@@ -23,6 +24,7 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
   declarations: [
     AppComponent,
     TjsAddNumbersComponent,
+    MkcPowerComponent,
     EaMultTwoNumbersComponent,
     PskNumberSubtractionComponent,
     IlemkeNumbersThingComponent,
