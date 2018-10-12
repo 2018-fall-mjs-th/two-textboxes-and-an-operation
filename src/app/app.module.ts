@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { AburnsStringSurgeryComponent } from './aburns-string-surgery/aburns-string-surgery.component';
 import { SylvieModuloComponent } from './sylvie-modulo/sylvie-modulo.component';
 import { JlDiceRollerComponent } from './jl-dice-roller/jl-dice-roller.component';
 import { GwbNumberMultiplicationComponent } from './gwb-number-multiplication/gwb-number-multiplication.component';
@@ -27,6 +28,7 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
   declarations: [
     AppComponent,
     TjsAddNumbersComponent,
+    AburnsStringSurgeryComponent,
     SylvieModuloComponent,
     JlDiceRollerComponent,
     GwbNumberMultiplicationComponent,
