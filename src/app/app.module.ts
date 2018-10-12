@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { IlemkeNumbersThingComponent } from './ilemke-numbers-thing/ilemke-numbers-thing.component';
+import { MatrixService } from './ilemke-numbers-thing/mtrx.service';
 import { Lm2IntToHexComponent } from './lm2-int-to-hex/lm2-int-to-hex.component';
 import { KcsComponentComponent } from './kcs-component/kcs-component.component';
 import { MsaAddNumbersComponent } from './msa-add-numbers/msa-add-numbers.component';
@@ -19,6 +21,7 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
   declarations: [
     AppComponent,
     TjsAddNumbersComponent,
+    IlemkeNumbersThingComponent,
     Lm2IntToHexComponent,
     KcsComponentComponent,
     MsaAddNumbersComponent,
@@ -34,7 +37,7 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MatrixService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
