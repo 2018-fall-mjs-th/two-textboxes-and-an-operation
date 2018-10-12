@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { Lm2IntToHexComponent } from './lm2-int-to-hex/lm2-int-to-hex.component';
 import { KcsComponentComponent } from './kcs-component/kcs-component.component';
 import { MsaAddNumbersComponent } from './msa-add-numbers/msa-add-numbers.component';
 import { TjsNumberAddition2Component } from './tjs-number-addition2/tjs-number-addition2.component';
@@ -18,6 +19,7 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
   declarations: [
     AppComponent,
     TjsAddNumbersComponent,
+    Lm2IntToHexComponent,
     KcsComponentComponent,
     MsaAddNumbersComponent,
     TjsNumberAddition2Component,
