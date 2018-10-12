@@ -1,0 +1,10 @@
+<h2>Guess that operation!</h2>
+<input type="number" [(ngModel)]="n3">
+?
+<input type="number" [(ngModel)]="n4">
+<button (click)="mysteryOperation()">=</button>
+{{ answer }}
+
+<button (click)="getOperation()">What is this Operation?</button>
+<br>
+<div id="operation"></div>
