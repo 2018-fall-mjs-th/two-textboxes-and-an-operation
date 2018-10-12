@@ -1,6 +1,12 @@
-<h3>Tom's String Concatenation</h3>
-<input type="text" [(ngModel)]="s1">
-&nbsp; &lt;space&gt; &nbsp;
-<input type="text" [(ngModel)]="s2">
-&nbsp; <button (click)="concatWithSpace()">Concat (w/ space)</button> &nbsp;
-{{ answer }}
+<div class="card">
+    <div class="card-header">
+        Tom's String Concatenation
+    </div>
+    <div class="card-body">
+        <input type="text" [(ngModel)]="s1">
+        &nbsp; &lt;space&gt; &nbsp;
+        <input type="text" [(ngModel)]="s2">
+        &nbsp; <button (click)="concatWithSpace()">Concat (w/ space)</button> &nbsp;
+        {{ answer }}
+    </div>
+</div>
