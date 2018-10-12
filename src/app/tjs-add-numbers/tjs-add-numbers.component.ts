@@ -20,4 +20,10 @@ export class TjsAddNumbersComponent implements OnInit {
 
   n1: number = 2;
   n2: number = 3;
+
+
+  
+ 
+
+
 }

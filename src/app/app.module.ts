@@ -4,6 +4,13 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { AburnsStringSurgeryComponent } from './aburns-string-surgery/aburns-string-surgery.component';
+import { SylvieModuloComponent } from './sylvie-modulo/sylvie-modulo.component';
+import { JlDiceRollerComponent } from './jl-dice-roller/jl-dice-roller.component';
+import { GwbNumberMultiplicationComponent } from './gwb-number-multiplication/gwb-number-multiplication.component';
+import { MkcPowerComponent } from './mkc-power/mkc-power.component';
+import { EaMultTwoNumbersComponent } from './ea-mult-two-numbers/ea-mult-two-numbers.component';
+import { PskNumberSubtractionComponent } from './psk-number-subtraction/psk-number-subtraction.component';
 import { IlemkeNumbersThingComponent } from './ilemke-numbers-thing/ilemke-numbers-thing.component';
 import { MatrixService } from './ilemke-numbers-thing/mtrx.service';
 import { Lm2IntToHexComponent } from './lm2-int-to-hex/lm2-int-to-hex.component';
@@ -16,11 +23,19 @@ import { TjsNumberSubtractComponent } from './tjs-number-subtract/tjs-number-sub
 import { MamareNumberDivisionComponent } from './mamare-number-division/mamare-number-division.component';
 import { RdSearchStringComponent } from './rd-search-string/rd-search-string.component';
 import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-string-concatenation.component';
+import { EllisTakeTwoEqualityComponent } from './ellis-take-two-equality/ellis-take-two-equality.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TjsAddNumbersComponent,
+    AburnsStringSurgeryComponent,
+    SylvieModuloComponent,
+    JlDiceRollerComponent,
+    GwbNumberMultiplicationComponent,
+    MkcPowerComponent,
+    EaMultTwoNumbersComponent,
+    PskNumberSubtractionComponent,
     IlemkeNumbersThingComponent,
     Lm2IntToHexComponent,
     KcsComponentComponent,
@@ -31,7 +46,8 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
     TjsNumberSubtractComponent,
     MamareNumberDivisionComponent,
     RdSearchStringComponent,
-    TjsStringConcatenationComponent
+    TjsStringConcatenationComponent,
+    EllisTakeTwoEqualityComponent
   ],
   imports: [
     BrowserModule,
