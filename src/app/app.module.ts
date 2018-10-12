@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { SylvieModuloComponent } from './sylvie-modulo/sylvie-modulo.component';
 import { JlDiceRollerComponent } from './jl-dice-roller/jl-dice-roller.component';
 import { GwbNumberMultiplicationComponent } from './gwb-number-multiplication/gwb-number-multiplication.component';
 import { MkcPowerComponent } from './mkc-power/mkc-power.component';
@@ -26,6 +27,7 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
   declarations: [
     AppComponent,
     TjsAddNumbersComponent,
+    SylvieModuloComponent,
     JlDiceRollerComponent,
     GwbNumberMultiplicationComponent,
     MkcPowerComponent,

@@ -1,0 +1,9 @@
+<hr>
+<h2>Sylvie's Modulo Boxes</h2>
+<div>
+  <input type="number" [(ngModel)]="dividend">
+  &nbsp; % &nbsp;
+  <input type="number" [(ngModel)]="divisor" min="1">
+  &nbsp; <button (click)="moduloNumbers()">=</button> &nbsp;
+  {{ remainder }}
+</div>

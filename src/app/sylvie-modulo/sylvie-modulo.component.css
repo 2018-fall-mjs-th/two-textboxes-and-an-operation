@@ -1,0 +1,15 @@
+div {
+    background-color: lightcyan;
+    font-size: 1.5rem;
+    margin: 1em;
+    padding: 3em;
+    border-radius: 1em;
+    float: left;
+    margin-left:auto;
+    margin-right:auto;
+    border: 5px solid gold;
+}
+div input, div button {
+    font-size: 1.25rem;
+    padding: 1em;
+}
