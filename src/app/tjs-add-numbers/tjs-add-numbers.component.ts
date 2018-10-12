@@ -21,15 +21,6 @@ export class TjsAddNumbersComponent implements OnInit {
   n1: number = 2;
   n2: number = 3;
 
-powa = 8
-  
- powaNumbers() {
-    this.powa = Math.pow(this.x, this.y);
-  }
-
-  x: number = 2;
-  y: number = 3;
-
 
   
  

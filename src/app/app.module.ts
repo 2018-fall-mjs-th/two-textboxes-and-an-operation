@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { MkcPowerComponent } from './mkc-power/mkc-power.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TjsAddNumbersComponent
+    TjsAddNumbersComponent,
+    MkcPowerComponent
   ],
   imports: [
     BrowserModule,
