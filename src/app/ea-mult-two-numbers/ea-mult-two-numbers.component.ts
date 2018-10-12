@@ -12,7 +12,7 @@ export class EaMultTwoNumbersComponent implements OnInit {
   ngOnInit() {
   }
 
-  answer = '?';
+  answer = 6;
 
   multNumbers() {
     this.answer = this.n1 * this.n2;
