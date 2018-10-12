@@ -19,6 +19,7 @@ import { TjsNumberSubtractComponent } from './tjs-number-subtract/tjs-number-sub
 import { MamareNumberDivisionComponent } from './mamare-number-division/mamare-number-division.component';
 import { RdSearchStringComponent } from './rd-search-string/rd-search-string.component';
 import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-string-concatenation.component';
+import { EllisTakeTwoEqualityComponent } from './ellis-take-two-equality/ellis-take-two-equality.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
     TjsNumberSubtractComponent,
     MamareNumberDivisionComponent,
     RdSearchStringComponent,
-    TjsStringConcatenationComponent
+    TjsStringConcatenationComponent,
+    EllisTakeTwoEqualityComponent
   ],
   imports: [
     BrowserModule,
