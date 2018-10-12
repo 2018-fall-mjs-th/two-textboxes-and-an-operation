@@ -4,6 +4,10 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TjsAddNumbersComponent } from './tjs-add-numbers/tjs-add-numbers.component';
+import { AburnsStringSurgeryComponent } from './aburns-string-surgery/aburns-string-surgery.component';
+import { SylvieModuloComponent } from './sylvie-modulo/sylvie-modulo.component';
+import { JlDiceRollerComponent } from './jl-dice-roller/jl-dice-roller.component';
+import { GwbNumberMultiplicationComponent } from './gwb-number-multiplication/gwb-number-multiplication.component';
 import { MkcPowerComponent } from './mkc-power/mkc-power.component';
 import { EaMultTwoNumbersComponent } from './ea-mult-two-numbers/ea-mult-two-numbers.component';
 import { PskNumberSubtractionComponent } from './psk-number-subtraction/psk-number-subtraction.component';
@@ -25,6 +29,10 @@ import { EllisTakeTwoEqualityComponent } from './ellis-take-two-equality/ellis-t
   declarations: [
     AppComponent,
     TjsAddNumbersComponent,
+    AburnsStringSurgeryComponent,
+    SylvieModuloComponent,
+    JlDiceRollerComponent,
+    GwbNumberMultiplicationComponent,
     MkcPowerComponent,
     EaMultTwoNumbersComponent,
     PskNumberSubtractionComponent,
