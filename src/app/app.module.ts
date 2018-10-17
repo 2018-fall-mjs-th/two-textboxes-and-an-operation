@@ -24,6 +24,7 @@ import { MamareNumberDivisionComponent } from './mamare-number-division/mamare-n
 import { RdSearchStringComponent } from './rd-search-string/rd-search-string.component';
 import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-string-concatenation.component';
 import { EllisTakeTwoEqualityComponent } from './ellis-take-two-equality/ellis-take-two-equality.component';
+import { TomsFunStuffComponent } from './toms-fun-stuff/toms-fun-stuff.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { EllisTakeTwoEqualityComponent } from './ellis-take-two-equality/ellis-t
     MamareNumberDivisionComponent,
     RdSearchStringComponent,
     TjsStringConcatenationComponent,
-    EllisTakeTwoEqualityComponent
+    EllisTakeTwoEqualityComponent,
+    TomsFunStuffComponent
   ],
   imports: [
     BrowserModule,
