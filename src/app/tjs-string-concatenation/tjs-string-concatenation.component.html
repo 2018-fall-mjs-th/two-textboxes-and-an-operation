@@ -7,6 +7,6 @@
         &nbsp; &lt;space&gt; &nbsp;
         <input type="text" [(ngModel)]="s2">
         &nbsp; <button (click)="concatWithSpace()">Concat (w/ space)</button> &nbsp;
-        {{ answer }}
+        <span class="badge" [class.badge-primary]="false" [class.badge-warning]="true">{{ answer }}</span>
     </div>
 </div>
