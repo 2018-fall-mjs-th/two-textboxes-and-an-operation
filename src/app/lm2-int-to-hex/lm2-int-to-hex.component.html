@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header">
+        <div class="card-header">Leroy's Number Conversion</div>
+        &nbsp; &nbsp;
+<div class="input-group-prepend">
+    <span class="input-group-text">Integer to Hex</span>
+<input type="number" [(ngModel)]="n1" min="1" max="65536">
+
+&nbsp; = &nbsp; {{ answer1 }}
+</div>
+&nbsp; &nbsp;
+<div class="input-group-prepend">
+    <span class="input-group-text">Integer to Binary</span>
+<input type="number" [(ngModel)]="n2" min="1" max="65536">
+    
+&nbsp; = &nbsp; {{ answer2 }}
+</div>
+
+<br /> 
+<br />
+<button class="btn btn-primary"(click)="convertNumbers()">Convert</button> &nbsp;
+
+    </div>
+</div>

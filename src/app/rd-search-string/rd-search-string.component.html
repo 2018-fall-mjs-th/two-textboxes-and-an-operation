@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-header">
+        Ross' String Search
+    </div>
+    <div class="card-body">
+        <input type="text" placeholder="String To Search" [(ngModel)]="stringToSearch"> &nbsp; ? &nbsp;
+        <input type="text" placeholder="Search Value" [(ngModel)]="searchString"> &nbsp; <button (click)="checkString()">Find</button>
+        &nbsp; {{ isMatch }}
+    </div>
+</div>
