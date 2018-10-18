@@ -16,10 +16,12 @@ export class TomsFunStuffComponent implements OnInit {
 
   reverseString(str:string) {
 
-    
-    str.split("").reverse().join(" ");
+    this.n1 = this.n1.split('').reverse().join("");
+    this.n2 = this.n2.split('').reverse().join("");
 
-    return this.answer = this.n1 + this.n2;
+    this.answer = this.n1 + " " + this.n2;;
+
+    return this.answer;
   }
 
   n1:string = "hello";
