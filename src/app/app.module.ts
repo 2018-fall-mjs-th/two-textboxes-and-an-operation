@@ -23,6 +23,7 @@ import { TjsNumberSubtractComponent } from './tjs-number-subtract/tjs-number-sub
 import { MamareNumberDivisionComponent } from './mamare-number-division/mamare-number-division.component';
 import { RdSearchStringComponent } from './rd-search-string/rd-search-string.component';
 import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-string-concatenation.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
