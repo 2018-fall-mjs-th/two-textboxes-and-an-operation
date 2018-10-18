@@ -1,16 +1,28 @@
-  <div class="card">
-    <div class="card-header">
-      Tom's Number Addition
-    </div>
-    <div class="card-body">
+ <ngb-accordion >
+   <ngb-panel title="Tom's Number Addition">
+     <ng-template ngbPanelContent>
       <input type="number" [(ngModel)]="n1">
       &nbsp; + &nbsp;
       <input type="number" [(ngModel)]="n2">
       &nbsp; <button (click)="addNumbers()">=</button> &nbsp;
       {{ answer }}
+     </ng-template>
+     <hr />
+   </ngb-panel>
+ </ngb-accordion>
+ 
+ <hr />
+
+<!--  
+  <div class="card">
+    <div class="card-header">
+      Tom's Number Addition
+    </div>
+    <div class="card-body">
+ 
     </div>
   </div>
-  
+-->
   
 
 
