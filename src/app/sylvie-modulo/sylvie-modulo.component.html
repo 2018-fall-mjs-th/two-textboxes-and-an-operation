@@ -1,12 +1,13 @@
-<div class="card my-4 border-info">
-  <div class="card-header text-info">
-    <h2 class="card-title">Sylvie's Modulo Boxes</h2>
-  </div>
-  <div class="card-body form-inline">
-    <input class="form-control border-info" type="number" [(ngModel)]="dividend">
-    &nbsp; % &nbsp;
-    <input class="form-control border-info" type="number" [(ngModel)]="divisor" min="1">
-    &nbsp; <button class="btn btn-info" (click)="moduloNumbers()">=</button> &nbsp;
-    {{ remainder }}
-  </div>
-</div>
+<ngb-accordion #acc="ngbAccordion">
+  <ngb-panel title="Sylvie's Modulo Boxes">
+    <ng-template ngbPanelContent>
+      <div class="form-inline">
+        <input class="form-control border-info" type="number" [(ngModel)]="dividend">
+        &nbsp; % &nbsp;
+        <input class="form-control border-info" type="number" [(ngModel)]="divisor" min="1">
+        &nbsp; <button class="btn btn-info" (click)="moduloNumbers()">=</button> &nbsp;
+        {{ remainder }}
+      </div>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
