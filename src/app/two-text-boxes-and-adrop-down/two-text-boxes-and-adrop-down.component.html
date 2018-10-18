@@ -1,14 +1,21 @@
-<div class = "card">
-    <div class = "card-header">
-        <h3>Messing with the Maths</h3>
-    </div>
-    <div class = "card-body">
-        sqrt(<input type="number" [(ngModel)]="n1">
-        &nbsp;^&nbsp;
-        <input type="number" [(ngModel)]="n2">)
-        &nbsp; <button (click)="addNumbers()">=</button> &nbsp;
-        {{ answer }}
-    </div>
-</div>
+<ngb-accordion>
+    <ngb-panel id="SescheraunAccordion">
+        <ng-template ngbPanelTitle>
+            <span><H3>Messing with the maths</H3></span>
+        </ng-template>
+        <ng-template ngbPanelContent>
+            sqrt(<input type="number" [(ngModel)]="n1">
+            &nbsp;^&nbsp;
+            <input type="number" [(ngModel)]="n2">)
+            &nbsp; <button (click)="addNumbers()">=</button> &nbsp;
+            {{ answer }} 
+
+        </ng-template>
+    </ngb-panel>
+</ngb-accordion>
+
+
+
+
 
 
