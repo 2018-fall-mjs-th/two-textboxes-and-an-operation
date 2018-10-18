@@ -1,14 +1,12 @@
-
-<div class="card">
-  <div class="card-header" style="background-color: #d8fffd; font-size: 2em">
-    Mary's Number POWA
-  </div>
-  <div class="card-body" style="background-color: #fcfcfc;">
-    <h4 style="font-size: 1.5em;">f(x,y) = x^y</h4>
-    f(<input type="number" [(ngModel)]="x">,
-    <input type="number" [(ngModel)]="y">)
-    &nbsp; = &nbsp; {{ x }}^{{ y }}  
-    &nbsp;<button (click)="powaNumbers()">=</button> &nbsp;
-    {{ powa }}
-  </div>
-</div>
+<ngb-accordion>
+  <ngb-panel id="toggle-1" title="Mary's POWA function">
+    <ng-template ngbPanelContent>
+      <h4 style="font-size: 1.5em;">f(x,y) = x^y</h4>
+      f(<input type="number" [(ngModel)]="x">,
+      <input type="number" [(ngModel)]="y">)
+      &nbsp; = &nbsp; {{ x }}^{{ y }}  
+      &nbsp;<button (click)="powaNumbers()">=</button> &nbsp;
+      {{ powa }}
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
