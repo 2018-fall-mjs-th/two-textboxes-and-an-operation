@@ -19,7 +19,7 @@ export class TomsFunStuffComponent implements OnInit {
     this.n1 = this.n1.split('').reverse().join("");
     this.n2 = this.n2.split('').reverse().join("");
 
-    this.answer = this.n1 + " " + this.n2;;
+    this.answer = this.n2 + " " + this.n1;
 
     return this.answer;
   }
