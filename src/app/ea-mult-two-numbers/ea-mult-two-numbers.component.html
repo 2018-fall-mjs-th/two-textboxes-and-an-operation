@@ -1,14 +1,13 @@
-<div class="card">
-  <div class="card-header">
-      EAlbee Number Multiplication
-  </div>
-  <div class="card-body">
-      <input type="number" [(ngModel)]="n1">
-      &nbsp; x &nbsp;
-      <input type="number" [(ngModel)]="n2">
-      &nbsp; <button (click)="multNumbers()">=</button> &nbsp;
-      {{ answer }}
-  </div>
-</div>
+<ngb-accordion>
+    <ngb-panel title="EAlbee Number Multiplication">
+        <ng-template ngbPanelContent>
+                <input type="number" [(ngModel)]="n1">
+                &nbsp; x &nbsp;
+                <input type="number" [(ngModel)]="n2">
+                &nbsp; <button (click)="multNumbers()">=</button> &nbsp;
+                {{ answer }}
+        </ng-template>    
+    </ngb-panel>
+</ngb-accordion>
 
 
