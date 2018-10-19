@@ -4,10 +4,22 @@
             <span><H3>Messing with the maths</H3></span>
         </ng-template>
         <ng-template ngbPanelContent>
+            
             sqrt(<input type="number" [(ngModel)]="n1">
             &nbsp;^&nbsp;
             <input type="number" [(ngModel)]="n2">)
-            &nbsp; <button (click)="addNumbers()">=</button> &nbsp;
+            &nbsp; 
+            <button type="button" 
+                   class="btn btn-outline-secondary" 
+              ngbPopover="It does the thing!" 
+                 (click)="addNumbers()"
+                triggers="mouseenter:mouseleave"
+            popoverTitle="This button!"
+            >
+                =
+            </button>
+            
+            &nbsp;
             {{ answer }} 
 
         </ng-template>
