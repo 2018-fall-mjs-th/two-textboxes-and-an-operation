@@ -12,7 +12,7 @@ export class MsaAddNumbersComponent implements OnInit {
   ngOnInit() {
   }
 
-  answer = 0;
+  answer = 0; 
 
   addNumbers() {
     this.answer = this.n1 + this.n2 + this.n3;
