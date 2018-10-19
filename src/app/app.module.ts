@@ -25,6 +25,7 @@ import { RdSearchStringComponent } from './rd-search-string/rd-search-string.com
 import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-string-concatenation.component';
 import { EllisTakeTwoEqualityComponent } from './ellis-take-two-equality/ellis-take-two-equality.component';
 import { TomsFunStuffComponent } from './toms-fun-stuff/toms-fun-stuff.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -54,6 +55,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     TomsFunStuffComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     FormsModule,
     NgbModule
