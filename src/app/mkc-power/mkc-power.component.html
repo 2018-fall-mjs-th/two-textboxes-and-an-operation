@@ -1,5 +1,8 @@
 <ngb-accordion>
-  <ngb-panel id="toggle-1" title="Mary's POWA function">
+  <ngb-panel>
+  <ng-template ngbPanelTitle>
+    <span id="functionTitle">Mary's Powa Function</span>
+  </ng-template>
     <ng-template ngbPanelContent>
       <h4 style="font-size: 1.5em;">f(x,y) = x^y</h4>
       f(<input type="number" [(ngModel)]="x">,
