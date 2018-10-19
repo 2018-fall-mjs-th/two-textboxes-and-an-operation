@@ -4,7 +4,7 @@
       <input type="string" [(ngModel)]="n1">
       &nbsp; + &nbsp;
       <input type="string" [(ngModel)]="n2">
-      &nbsp; <button class="btn btn-primary" (click)="shoutPhrase()">SHOUT</button> &nbsp;
+      &nbsp; <button class="btn btn-primary" placement="top" ngbTooltip="Click to SHOUT"(click)="shoutPhrase()">SHOUT</button> &nbsp;
       {{ answer }}
     </ng-template>
   </ngb-panel>
