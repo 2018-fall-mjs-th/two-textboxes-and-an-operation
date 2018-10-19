@@ -1,29 +1,15 @@
-<ngb-accordion activeIds="ngb-panel-0">
-    <ngb-panel title="My Title!">
+<ngb-accordion>
+    <ngb-panel>
+        <ng-template ngbPanelTitle>
+            <span id="isaacsNumbersThing" >Isaac's Numbers Thing</span>
+        </ng-template>
         <ng-template ngbPanelContent>
             <input type="text" class="form-control i-med" [(ngModel)]="myMatrixString1">
             <input type="text" class="form-control i-med" [(ngModel)]="myMatrixString2">
             <button class="btn btn-dark i-btn" (click)="initiateTheMatrix()">
-                Take the Red Pill
+                <img src="./Pacman-1s-200px.gif" width="10px;"/> Take the Red Pill
             </button>
             <div id="matrixNode" style="position:fixed;right:0;top:0"></div>
         </ng-template>
     </ngb-panel>
 </ngb-accordion>
-
-<br/><br/>
-<div class="card" >
-    <div class="card-header alert-dark i-card">
-       Isaac's ... Numbers Thing
-    </div>
-    <div class="card-body">
-            <input type="text" class="form-control i-med" [(ngModel)]="myMatrixString1">
-            <input type="text" class="form-control i-med" [(ngModel)]="myMatrixString2">
-            <button class="btn btn-dark i-btn" (click)="initiateTheMatrix()">
-                Take the Red Pill
-            </button>
-            <div id="matrixNode" style="position:fixed;right:0;top:0"></div>
-    </div>
-</div>
-
-
