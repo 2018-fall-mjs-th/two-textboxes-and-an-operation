@@ -21,5 +21,6 @@ export class TjsNumberSubtractComponent implements OnInit {
     this.answer = this.n1 - this.n2;
   }
 
+  isCollapsed = true;
  
 }

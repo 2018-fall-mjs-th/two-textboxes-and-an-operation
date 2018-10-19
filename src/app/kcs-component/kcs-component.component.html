@@ -1,12 +1,13 @@
-<div class="card">
-  <div class="card-header">
-    Kevin's Shout Component
-  </div>
-  <div class="card-body">
-    <input type="string" [(ngModel)]="n1">
-  &nbsp; + &nbsp;
-  <input type="string" [(ngModel)]="n2">
-  &nbsp; <button class="btn btn-primary" (click)="shoutPhrase()">SHOUT</button> &nbsp;
-  {{ answer }}
-  </div>
-</div>
+<ngb-accordion>
+  <ngb-panel title="Kevin's Shout Component">
+    <ng-template ngbPanelContent>
+      <input type="string" [(ngModel)]="n1">
+      &nbsp; + &nbsp;
+      <input type="string" [(ngModel)]="n2">
+      &nbsp; <button class="btn btn-primary" placement="top" ngbTooltip="Click to SHOUT"(click)="shoutPhrase()">SHOUT</button> &nbsp;
+      {{ answer }}
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+
+

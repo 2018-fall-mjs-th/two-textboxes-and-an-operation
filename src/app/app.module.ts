@@ -26,6 +26,7 @@ import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-
 import { EllisTakeTwoEqualityComponent } from './ellis-take-two-equality/ellis-take-two-equality.component';
 import { TomsFunStuffComponent } from './toms-fun-stuff/toms-fun-stuff.component';
 import { SubtractNumbersComponent } from './subtract-numbers/subtract-numbers.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -54,8 +55,10 @@ import { SubtractNumbersComponent } from './subtract-numbers/subtract-numbers.co
     TomsFunStuffComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [MatrixService],
   bootstrap: [AppComponent]
