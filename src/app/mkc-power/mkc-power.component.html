@@ -8,7 +8,7 @@
       f(<input type="number" [(ngModel)]="x">,
       <input type="number" [(ngModel)]="y">)
       &nbsp; = &nbsp; {{ x }}^{{ y }}  
-      &nbsp;<button (click)="powaNumbers()">=</button> &nbsp;
+      &nbsp;<button type="button" class="btn btn-outline-secondary mr-2" placement="top" ngbTooltip="computes the power expression" (click)="powaNumbers()">=</button> &nbsp;
       {{ powa }}
     </ng-template>
   </ngb-panel>
