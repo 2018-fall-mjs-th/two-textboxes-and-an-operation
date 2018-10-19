@@ -1,4 +1,22 @@
+<p>
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+    Toggle Paul's Number Subtractor
+  </button>
+</p>
+<div id="collapseExample" [ngbCollapse]="isCollapsed">
+  <div class="card">
+    <div class="card-body">
+        <input type="number" [(ngModel)]="n1">
+        &nbsp; - &nbsp;
+        <input type="number" [(ngModel)]="n2">
+        &nbsp; <button (click)="subNumbers()">=</button> &nbsp;
+        {{ answer }}
+    </div>
+  </div>
+</div>
 
+<!--
 <div class="card">
     <div class="card-header">
         Pauls's Number Subtractor
@@ -13,3 +31,4 @@
     </div>
 </div>
 
+-->
