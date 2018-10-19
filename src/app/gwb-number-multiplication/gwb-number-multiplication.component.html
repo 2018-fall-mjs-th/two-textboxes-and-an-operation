@@ -1,13 +1,16 @@
-<div class="card">
-    <div class="card-header">
-        Grant's Number Multiplication
-    </div>
-        
+<p>
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="showMultiplication">
+    Hide/Show Grant's Number Multiplier
+  </button>
+</p>
+<div id="showMultiplication" [ngbCollapse]="isCollapsed">
+  <div class="card">
     <div class="card-body">
         <input type="number" [(ngModel)]="n1">
-        &nbsp; + &nbsp;
+        &nbsp; * &nbsp;
         <input type="number" [(ngModel)]="n2">
         &nbsp; <button (click)="addNumbers()">=</button> &nbsp;
         {{ answer }}
     </div>
-</div>
+  </div>
