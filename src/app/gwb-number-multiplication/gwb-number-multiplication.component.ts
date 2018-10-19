@@ -20,4 +20,6 @@ export class GwbNumberMultiplicationComponent implements OnInit {
   //yup
   n1: number = 2;
   n2: number = 3;
+
+  isCollapsed = true;
 }
