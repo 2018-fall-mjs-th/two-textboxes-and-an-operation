@@ -1,12 +1,17 @@
-<ngb-accordion #acc="ngbAccordion">
-  <ngb-panel title="Sylvie's Modulo Boxes">
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel>
+    <ng-template ngbPanelTitle>
+      <span class="h4">&#10024; Sylvie's <b>Fancy</b> Modulo Boxes &#10024;</span>
+    </ng-template>
     <ng-template ngbPanelContent>
       <div class="form-inline">
-        <input class="form-control border-info" type="number" [(ngModel)]="dividend">
-        &nbsp; % &nbsp;
-        <input class="form-control border-info" type="number" [(ngModel)]="divisor" min="1">
-        &nbsp; <button class="btn btn-info" (click)="moduloNumbers()">=</button> &nbsp;
-        {{ remainder }}
+        <span class="pr-3" placement="right" ngbTooltip="Get the modulo, or the remainder after dividing two numbers">
+          <input class="form-control border-info" type="number" [(ngModel)]="dividend">
+          &nbsp; % &nbsp;
+          <input class="form-control border-info" type="number" [(ngModel)]="divisor" min="1">
+          &nbsp; <button class="btn btn-info" (click)="moduloNumbers()">=</button> &nbsp;
+          {{ remainder }}
+        </span>
       </div>
     </ng-template>
   </ngb-panel>
