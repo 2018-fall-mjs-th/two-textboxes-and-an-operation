@@ -12,11 +12,12 @@ export class MatrixService {
 
         let ctx = c.getContext("2d");
 
-        //making the canvas full screen
-        c.height = window.innerHeight;
+        // Make the canvas full screen - Thanks Ben, Sylvie & Ross for the fix suggestions!
+        c.height = window.innerHeight; 
         c.width = window.innerWidth;
 
-        //let chineseCharacters = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
+        // No idea what they mean, but these chineese characters look legit
+        // let chineseCharacters = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
         let numbers = concatString;
         let numbersArray = concatString.split("");
 

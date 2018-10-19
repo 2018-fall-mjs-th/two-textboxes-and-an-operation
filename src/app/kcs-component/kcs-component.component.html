@@ -1,6 +1,12 @@
-<h3>Kevin's Shout Component</h3>
-<input type="string" [(ngModel)]="n1">
+<div class="card">
+  <div class="card-header">
+    Kevin's Shout Component
+  </div>
+  <div class="card-body">
+    <input type="string" [(ngModel)]="n1">
   &nbsp; + &nbsp;
   <input type="string" [(ngModel)]="n2">
-  &nbsp; <button (click)="shoutPhrase()">SHOUT</button> &nbsp;
+  &nbsp; <button class="btn btn-primary" (click)="shoutPhrase()">SHOUT</button> &nbsp;
   {{ answer }}
+  </div>
+</div>

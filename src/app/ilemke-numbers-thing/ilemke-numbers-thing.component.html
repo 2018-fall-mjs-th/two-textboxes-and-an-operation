@@ -1,7 +1,15 @@
-<h3>Isaac's ... Numbers Thing</h3>
-<input type="text" [(ngModel)]="myMatrixString1">
-<input type="text" [(ngModel)]="myMatrixString2">
+<div class="card" >
+    <div class="card-header alert-dark i-card">
+       Isaac's ... Numbers Thing
+    </div>
+    <div class="card-body">
+            <input type="text" class="form-control i-med" [(ngModel)]="myMatrixString1">
+            <input type="text" class="form-control i-med" [(ngModel)]="myMatrixString2">
+            <button class="btn btn-dark i-btn" (click)="initiateTheMatrix()">
+                Take the Red Pill
+            </button>
+            <div id="matrixNode" style="position:fixed;right:0;top:0"></div>
+    </div>
+</div>
 
-<button (click)="initiateTheMatrix()">Take the Red Pill</button>
 
-<div id="matrixNode" style="position:absolute;right:0;top:0"></div>

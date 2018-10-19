@@ -1,10 +1,16 @@
-<h2>Guess that operation!</h2>
-<input type="number" [(ngModel)]="n3">
-?
-<input type="number" [(ngModel)]="n4">
-<button (click)="mysteryOperation()">=</button>
-{{ answer }}
+<div class="card">
+    <div class="card-header">
+        Guess that operation!
+    </div>
+    <div class="card-body">
+        <input type="number" [(ngModel)]="n3">
+        ?
+        <input type="number" [(ngModel)]="n4">
+        <button (click)="mysteryOperation()" class="btn-primary">=</button>
+        {{ answer }}
 
-<button (click)="getOperation()">What is this Operation?</button>
-<br>
-<div id="operation"></div>
+        <button (click)="getOperation()" class="btn-primary">What is this Operation?</button>
+        <br>
+        <div id="operation" class="h1"></div>
+    </div>
+</div>

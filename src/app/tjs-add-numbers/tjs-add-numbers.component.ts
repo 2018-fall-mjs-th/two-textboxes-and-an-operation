@@ -14,16 +14,10 @@ export class TjsAddNumbersComponent implements OnInit {
 
   answer = 5;
 
-  shoutPhrase() {
+  addNumbers() {
     this.answer = this.n1 + this.n2;
   }
 
   n1: number = 2;
   n2: number = 3;
-
-
-  
- 
-
-
 }

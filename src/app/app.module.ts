@@ -24,6 +24,8 @@ import { MamareNumberDivisionComponent } from './mamare-number-division/mamare-n
 import { RdSearchStringComponent } from './rd-search-string/rd-search-string.component';
 import { TjsStringConcatenationComponent } from './tjs-string-concatenation/tjs-string-concatenation.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EllisTakeTwoEqualityComponent } from './ellis-take-two-equality/ellis-take-two-equality.component';
+import { TomsFunStuffComponent } from './toms-fun-stuff/toms-fun-stuff.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TjsNumberSubtractComponent,
     MamareNumberDivisionComponent,
     RdSearchStringComponent,
-    TjsStringConcatenationComponent
+    TjsStringConcatenationComponent,
+    EllisTakeTwoEqualityComponent,
+    TomsFunStuffComponent
   ],
   imports: [
     BrowserModule,
