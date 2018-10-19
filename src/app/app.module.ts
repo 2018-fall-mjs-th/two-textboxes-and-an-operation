@@ -27,14 +27,6 @@ import { EllisTakeTwoEqualityComponent } from './ellis-take-two-equality/ellis-t
 import { TomsFunStuffComponent } from './toms-fun-stuff/toms-fun-stuff.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
 @NgModule({
   declarations: [
     AppComponent,
