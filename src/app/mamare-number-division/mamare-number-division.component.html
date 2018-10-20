@@ -1,10 +1,13 @@
 <ngb-accordion>
   <ngb-panel title="Mahlet's Number Division">
     <ng-template ngbPanelContent>
+        <ngb-rating [(rate)]="currentRate"></ngb-rating>
+        <hr>
+        <pre>Rate: <b>{{currentRate}}</b></pre>
     <input type="number" [(ngModel)]="n1">
       &nbsp; / &nbsp;
     <input type="number" [(ngModel)]="n2">
-      &nbsp; <button (click)="divideNumbers()">=</button> &nbsp;
+    &nbsp; <button class="btn btn-sm btn-outline-primary mr-2" placement="top" ngbTooltip="let's divide the numbers" (click)="divideNumbers()">=</button> &nbsp;
       {{ answer }}
     </ng-template>
   </ngb-panel>

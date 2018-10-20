@@ -20,5 +20,7 @@ export class MamareNumberDivisionComponent implements OnInit {
 
   n1: number = 0;
   n2: number = 0;
+
+  currentRate = 8;
 }
 
