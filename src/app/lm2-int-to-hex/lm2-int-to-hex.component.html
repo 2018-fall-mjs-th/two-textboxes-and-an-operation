@@ -1,24 +1,48 @@
-<div class="card">
-    <div class="card-header">
-        <div class="card-header">Leroy's Number Conversion</div>
-        &nbsp; &nbsp;
-<div class="input-group-prepend">
-    <span class="input-group-text">Integer to Hex</span>
-<input type="number" [(ngModel)]="n1" min="1" max="65536">
-
-&nbsp; = &nbsp; {{ answer1 }}
+<div class="row">
+    <div class="col-lg card-header">Leroy's Number Conversion</div>
 </div>
+
+
+<div class="row">
+    
+<div class="col-sm">
+
+  
+      <div></div>
+    <span class="input-group-text">Integer to Hex</span>
+    &nbsp;<input type="number" [(ngModel)]="n1" min="1" max="65536">
+&nbsp; = &nbsp; {{ answer1 }}
 &nbsp; &nbsp;
-<div class="input-group-prepend">
+
     <span class="input-group-text">Integer to Binary</span>
-<input type="number" [(ngModel)]="n2" min="1" max="65536">
+    &nbsp;<input type="number" [(ngModel)]="n2" min="1" max="65536">
     
 &nbsp; = &nbsp; {{ answer2 }}
+
+<span class="input-group-text">
+  <button class="btn btn-primary"(click)="convertNumbers()">Convert</button>
+</span> 
+
+&nbsp;
 </div>
 
-<br /> 
-<br />
-<button class="btn btn-primary"(click)="convertNumbers()">Convert</button> &nbsp;
-
+<div class="col-sm">
+    <div class="form-group">
+      <div class="input-group">
+          &nbsp; &nbsp;
+          <span class="input-group-text">Pick a date</span>
+        <input class="form-control" placeholder="yyyy-mm-dd"
+               name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+        </div>
+      </div>
     </div>
+ 
+  <div class="col-sm">  &nbsp; &nbsp;<div>Month: {{model.month}} </div>
+    &nbsp; &nbsp;<div>Date: {{model.day}} </div>
+    &nbsp; &nbsp;<div>Year: {{model.year}}</div>
+  </div>
 </div>
+</div>
+         
