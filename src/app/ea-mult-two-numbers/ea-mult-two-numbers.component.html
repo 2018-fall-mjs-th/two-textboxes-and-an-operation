@@ -1,13 +1,20 @@
-<ngb-accordion>
-    <ngb-panel title="EAlbee Number Multiplication">
-        <ng-template ngbPanelContent>
-                <input type="number" [(ngModel)]="n1">
-                &nbsp; x &nbsp;
-                <input type="number" [(ngModel)]="n2">
-                &nbsp; <button (click)="multNumbers()">=</button> &nbsp;
-                {{ answer }}
-        </ng-template>    
-    </ngb-panel>
-</ngb-accordion>
+
+    <ngb-accordion>
+       
+            <ngb-panel title="EAlbee Number Multiplication">
+                
+                    <ng-template ngbPanelContent>
+                        <ngb-alert *ngIf="!staticAlertclosed" (close)="staticAlertClosed = true" type=danger>THIS IS EALBEE'S "DANGER" ALERT!!!
+                            <input type="number" [(ngModel)]="n1">
+                            &nbsp; x &nbsp;
+                            <input type="number" [(ngModel)]="n2">
+                            &nbsp; <button (click)="multNumbers()">=</button> &nbsp;
+                            {{ answer }}
+                        </ngb-alert>
+                    </ng-template>    
+                
+            </ngb-panel>
+    
+    </ngb-accordion>
 
 
