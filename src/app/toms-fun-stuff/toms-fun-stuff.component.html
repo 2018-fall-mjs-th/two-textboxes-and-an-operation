@@ -1,12 +1,20 @@
-<div class="card">
-  <div class="card-header">
-    Tom's Fun Stuff
-  </div>
-  <div class="card-body">
-    <input type="text" [(ngModel)]="n1">
-    &nbsp; + &nbsp;
-    <input type="text" [(ngModel)]="n2">
-    &nbsp; <button (click)="reverseString()">flip it and reverse it</button> &nbsp;
-    {{ answer }}
-  </div>
+<div id="div">
+  <button class="btn blue-gradient" id="tom">
+    <ngb-accordion>
+      <ngb-panel title="Tom's Fun Stuff">
+        <ng-template ngbPanelContent>
+            <input type="text" [(ngModel)]="n1">
+              &nbsp; + &nbsp;
+            <input type="text" [(ngModel)]="n2">
+            &nbsp; 
+            <button (click)="reverseString()">flip it and reverse it</button> &nbsp;
+            {{ answer }}
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+    </button>
+    <br><br>
+    Please rate: 
+    <ngb-rating [(rate)]="currentRate"></ngb-rating>
+    <pre>You rated this a <b>10</b></pre>
 </div>
