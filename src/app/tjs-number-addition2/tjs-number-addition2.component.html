@@ -1,3 +1,6 @@
+
+
+
 <h3>David's Static Number Subtraction Plus 1</h3>
 <input type="number" [(ngModel)]="n1">
 &nbsp; - &nbsp;
@@ -5,3 +8,25 @@
 &nbsp; + 1 &nbsp;
 &nbsp; <button (click)="subtractNumbersPlusOne()">=</button> &nbsp;
 {{ answer }}
+
+
+
+<p>Rate this component below</p>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="currentRate = 1">1</button>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="currentRate = 2">2</button>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="currentRate = 3">3</button>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="currentRate = 4">4</button>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="currentRate = 5">5</button>
+<br>
+<ng-template #t let-fill="fill">
+  <span class="star" [class.full]="fill === 100">
+    <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+  </span>
+</ng-template>
+
+<ngb-rating [(rate)]="currentRate" [starTemplate]="t" [readonly]="true" max="5"></ngb-rating>
+
+
+<pre>Rate: <b>{{currentRate}}</b></pre>
+
+<hr>
