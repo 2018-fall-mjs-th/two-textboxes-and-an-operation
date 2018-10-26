@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-aburns-string-surgery',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AburnsStringSurgeryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
   }
@@ -21,6 +22,10 @@ export class AburnsStringSurgeryComponent implements OnInit {
     this.firstString = this.finalString;
     this.secondString = "";
 
+  }
+
+  open(content) {
+    this.modalService.open(content);
   }
 
 }

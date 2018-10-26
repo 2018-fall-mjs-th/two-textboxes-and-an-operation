@@ -1,4 +1,4 @@
-<!-- <div class="card">
+<div class="card">
   <div class="card-header">
     <h4 style="color:red">Drew's String Concatenation</h4>
   </div>
@@ -8,36 +8,24 @@
       <input type="text" [(ngModel)]="firstString">
       &nbsp; + &nbsp;
       <input type="text" [(ngModel)]="secondString" id="secondBox">
-      &nbsp; <button (click)="spliceStrings()">=</button> &nbsp;
+      &nbsp; <button (click)="open(surgery)">=</button> &nbsp;
       {{ finalString }}
   </div>
 </div>
-   -->
 
-   <ng-template #content let-modal>
+
+   <ng-template #surgery let-modal>
     <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+      <h4 class="modal-title" id="modal-basic-title">Really?</h4>
       <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
     <div class="modal-body">
-      <form>
-        <div class="form-group">
-          <label for="dateOfBirth">Date of birth</label>
-          <div class="input-group">
-            <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
-            </div>
-          </div>
-        </div>
-      </form>
+      <p>Are you sure? This action can't be undone.</p>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Go for it</button>
     </div>
   </ng-template>
-  
-  <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
-  
+
