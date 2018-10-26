@@ -28,4 +28,10 @@ export class AburnsStringSurgeryComponent implements OnInit {
     this.modalService.open(content);
   }
 
+  close() {
+    console.log("closing");
+    this.spliceStrings();
+    this.modalService.dismissAll();
+  }
+
 }
