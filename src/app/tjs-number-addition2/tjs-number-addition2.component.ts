@@ -15,7 +15,7 @@ export class TjsNumberAddition2Component implements OnInit {
   answer =8;
 
   subtractNumbersPlusOne() {
-    this.answer = this.n1 + this.n2 -1;
+    this.answer = this.n1 - this.n2 +1;
   }
 
   n1: number = 10;
