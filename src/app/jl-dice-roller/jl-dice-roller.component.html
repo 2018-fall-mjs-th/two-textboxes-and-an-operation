@@ -1,9 +1,9 @@
 <div class="card">
     <h4 class="card-header">Joe's Dice Roller</h4>
-    <div class="card-body form-inline">
-        <input type="number" class="numberBox form-control" [(ngModel)]="quantity" value="1" />
+    <div class="card-body form-inline dice-roller-container">
+        <input type="number" class="numberBox form-control" [(ngModel)]="quantity" value="1" ngbPopover="Quantity of dice to be rolled" triggers="mouseenter:mouseleave" />
         <h5 class="dice-symbol">d</h5>
-        <input type="number" class="numberBox form-control" [(ngModel)]="size" value="6" />
+        <input type="number" class="numberBox form-control" [(ngModel)]="size" value="6" ngbPopover="The number of sides on the dice" triggers="mouseenter:mouseleave" />
         &nbsp;<button class="btn btn-dark" (click)="rollDice()">Roll</button> &nbsp;
         <h4 class="dice-symbol">{{ answer }}</h4>
         <div class="error-field">{{ error }}</div>
