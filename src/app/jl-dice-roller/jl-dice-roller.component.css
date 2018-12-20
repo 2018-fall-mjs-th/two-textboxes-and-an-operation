@@ -1,5 +1,5 @@
 .numberBox {
-    width: 25px;
+    width: 2.5%;
     text-align: center;
 }
 
@@ -12,4 +12,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .error-field {
     color: red;
+}
+
+.dice-symbol {
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    margin-bottom: -0.05%
 }
